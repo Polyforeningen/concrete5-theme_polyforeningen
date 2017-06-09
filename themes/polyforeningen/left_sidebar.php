@@ -2,7 +2,7 @@
 defined('C5_EXECUTE') or die("Access Denied.");
 $this->inc('elements/header.php'); ?>
 
-		<div class="col-sm-3">
+		<div id="left-sidebar" class="col-sm-3">
 		<?php        
 		$a = new Area('Sidebar');
 		$a->display($c);

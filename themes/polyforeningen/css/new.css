@@ -1,0 +1,269 @@
+/*******************************************************************************
+ *
+ * Global
+ *
+ *****/
+body {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #444;
+    min-width: 320px;
+}
+
+.container {
+    background: #fff;
+    margin: 50px auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+@media (max-width: 768px) {
+    .limit {
+	width: 100%;
+    }
+}
+@media (min-width: 768px) {
+    .limit {
+	width: 615px;
+	margin: 0 auto;
+    }
+}
+@media (min-width: 992px) {
+    .limit {
+	width: 794px;
+	margin: 0 auto;
+    }
+}
+@media (min-width: 1200px) {
+    .limit {
+	width: 960px;
+	margin: 0 auto;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+}
+h1 {
+    font-size: 44px;
+    line-height: 52px;
+    margin-top: 26px;
+    margin-bottom: 26px;
+    font-weight: 400;
+}
+h2 {
+    font-size: 37px;
+    line-height: 46px;
+    margin-top: 26px;
+    margin-bottom: 26px;
+    font-weight: 400;
+}
+h3 {
+    font-size: 31px;
+    line-height: 39px;
+    margin-top: 26px;
+    margin-bottom: 26px;
+    font-weight: 400;
+}
+h4 {
+    font-size: 26px;
+    line-height: 33px;
+    margin-top: 26px;
+    margin-bottom: 26px;
+    font-weight: 400;
+}
+h5 {
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 26px;
+    margin-bottom: 26px;
+    font-weight: 400;
+}
+h6 {
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 26px;
+    margin-bottom: 26px;
+    font-weight: 400;
+}
+p,
+ul,
+ol,
+pre,
+table,
+blockquote {
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a {
+    color: #444;
+}
+a:hover,
+a:focus {
+    color: #111;
+    /*text-decoration: none;*/
+}
+.screen-reader-text {
+    display: none;
+}
+div.ccm-page img {
+    max-width: 100%;
+    height: auto;
+}
+div.ccm-page .image-circle .ccm-image-block {
+    border-radius: 50%;
+}
+div.ccm-page hr {
+    margin-top: 52px;
+    margin-bottom: 52px;
+}
+.inline-block {
+    display: inline-block !important;
+}
+
+/*******************************************************************************
+ *
+ * Header
+ *
+ *****/
+
+.site-header {
+    /* box-shadow: 0 1px 6px rgba(0,0,0,0.25); */
+    position: relative;
+    z-index: 10;
+}
+.editing .site-header {
+    z-index: auto;
+}
+.site-banner {
+    border: none;
+    font-weight: 400;
+    background: transparent;
+    text-align: center;
+}
+.site-name, .site-name h1, .site-name h2, .site-name h3, .site-name h4, .site-name h5, .site-name h6, .site-name a {
+    font-size: 33px;
+    line-height: 104px;
+    font-weight: 700;
+    color: #444;
+    text-decoration: none;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+.site-name a:hover, .site-name a:focus {
+    color: #444;
+}
+.site-name h1 small {
+    font-size: 21px;
+    font-weight: 400;
+    margin: 0;
+    display: none;
+    color: #444;
+}
+.site-name img {
+    margin: auto;
+}
+@media (min-width: 768px) {
+    .site-title {
+        padding-left: 0;
+    }
+    .navbar-header {
+        width: 100%;
+    }
+    .site-header {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media (min-width: 1200px) {
+    .site-name h1 small {
+        display: inline-block;
+        border-left: 1px solid rgba(0, 0, 0, .1);
+        padding-left: 10px;
+        margin: 32px 0 32px 5px;
+        line-height: 40px;
+        vertical-align: top;
+    }
+}
+
+/*******************************************************************************
+ *
+ * Navigation
+ *
+ *****/
+
+.navbar {
+    border: 0px;
+    border-radius: 0px;
+}
+
+/*******************************************************************************
+ *
+ * Content
+ *
+ *****/
+
+#content {
+    border-top: 1px dotted #ddd;
+    border-bottom: 1px dotted #ddd;
+}
+#left-sidebar {
+    border-right: 1px dotted #ddd;
+}
+#right-sidebar {
+    border-left: 1px dotted #ddd;
+}
+
+/*******************************************************************************
+ *
+ * Footer
+ *
+ *****/
+
+.site-footer {
+    padding: 26px 0;
+    font-size: 18px;
+}
+.site-footer h1, .site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5, .site-footer h6,
+.site-footer p, .site-footer ul, .site-footer ol, .site-footer pre, .site-footer table, .site-footer blockquote {
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+.site-info .col-sm-3 {
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.site-colophon {
+    background: #000;
+    color: #fff;
+    text-align: left;
+}
+.site-colophon .loginout {
+    float: right;
+}
+.site-colophon a {
+    color: #fff;
+}
+.site-colophon .copyright {
+    text-transform: uppercase;
+}
+.site-colophon form.logout {
+    display: inline;
+}

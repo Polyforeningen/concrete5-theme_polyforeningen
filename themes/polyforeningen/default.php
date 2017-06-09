@@ -10,7 +10,7 @@ $this->inc('elements/header.php'); ?>
 		?>
 		</div>
 
-		<div class="col-sm-3 col-sm-offset-1">
+		<div id="right-sidebar" class="col-sm-3 col-sm-offset-1">
 		<?php        
 		$a = new Area('Sidebar');
 		$a->display($c);

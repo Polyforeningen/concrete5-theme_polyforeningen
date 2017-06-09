@@ -13,6 +13,7 @@ body {
   font-size: @body-type-font-size;
   color: @body-type-color;
   font-weight: @body-type-font-weight;
+  background-image: @body-background-image
 }
 #content {
   background-color: @page-background-color;
@@ -44,12 +45,29 @@ input[type=submit]:focus {
 /* HEADER */
 .top-nav {
   background-color: @top-nav-background-color;
+  padding-top: @top-nav-top-spacing-size;
+  padding-bottom: @top-nav-bottom-spacing-size;
+}
+.top-nav .navbar-nav>li>a,
+.top-nav .navbar-nav>.open>a {
   font-family: @top-nav-type-font-family, sans-serif;
   font-size: @top-nav-type-font-size;
   color: @top-nav-type-color;
   font-weight: @top-nav-type-font-weight;
 }
-.top-nav a, .top-nav a:hover, .top-nav a:focus {
+.top-nav .navbar-nav>li>a:hover,
+.top-nav .navbar-nav>.open>a:hover,
+.top-nav .navbar-nav>li>a:focus,
+.top-nav .navbar-nav>.open>a:focus {
+  color: @top-nav-hover-type-color;
+}
+.top-nav .navbar-nav>.active {
+  background-color: @top-nav-active-background-color;
+}
+.top-nav .navbar-nav>.active>a,
+.top-nav .navbar-nav>.active>a:focus,
+.top-nav .navbar-nav>.active>a:hover {
+  background-color: @top-nav-active-background-color;
   color: @top-nav-type-color;
 }
 .site-header, .navigation {
@@ -82,29 +100,17 @@ input[type=submit]:focus {
   border-color: @header-search-input-border-color;
 }
 
-/* MAIN MENU */
-.primary-nav .navbar .navbar-nav>li>a,
-.primary-nav .navbar .navbar-nav>.open>a {
-  font-family: @header-navigation-type-font-family, sans-serif;
-  font-size: @header-navigation-type-font-size;
-  color: @header-navigation-type-color;
-  font-weight: @header-navigation-type-font-weight;
+/* BANNER SPACING */
+@media (max-width: 767px) {
+    .site-banner {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
 }
-.primary-nav .navbar .navbar-nav>li>a:focus,
-.primary-nav .navbar .navbar-nav>.open>a:focus,
-.primary-nav .navbar .navbar-nav>li>a:hover,
-.primary-nav .navbar .navbar-nav>.open>a:hover,
-.primary-nav .navbar .navbar-nav>.active>a,
-.primary-nav .navbar .navbar-nav>.active>a:focus,
-.primary-nav .navbar .navbar-nav>.active>a:hover {
-    color: @header-navigation-menu-text-hover-color;
-}
-
-/* HEADER SPACING */
 @media (min-width: 768px) {
-    .primary-nav .navbar {
-        margin-top: @header-top-spacing-size;
-        margin-bottom: @header-bottom-spacing-size;
+    .site-banner {
+        margin-top: @banner-top-spacing-size;
+        margin-bottom: @banner-bottom-spacing-size;
     }
 }
 
@@ -127,20 +133,39 @@ blockquote {
 
 /* FOOTER */
 .site-footer {
-  background-color: @footer-background-color;
-  font-family: @footer-text-type-font-family, sans-serif;
-  font-size: @footer-text-type-font-size;
-  color: @footer-text-type-color;
-  font-weight: @footer-text-type-font-weight;
+  background-color: @page-background-color;
+  font-family: @body-type-font-family, sans-serif;
+  font-size: @body-type-font-size;
+  color: @body-type-color;
+  font-weight: @body-type-font-weight;
 }
 .site-footer p, .site-footer h1, .site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5, .site-footer h6 {
-  color: @footer-text-type-color;
+  color: @body-type-color;
 }
 .site-footer a {
-  color: @footer-text-type-color;
+  color: @body-link-color;
 }
 .site-footer a:hover, .site-footer a:focus {
-  color: @footer-text-hover-color;
+  color: @body-link-hover-color;
+  text-decoration: none;
+}
+.site-colophon {
+  background-color: @colophon-background-color;
+  font-family: @colophon-text-type-font-family, sans-serif;
+  font-size: @colophon-text-type-font-size;
+  color: @colophon-text-type-color;
+  font-weight: @colophon-text-type-font-weight;
+  padding-top: @colophon-top-spacing-size;
+  padding-bottom: @colophon-bottom-spacing-size;
+}
+.site-colophon p, .site-colophon h1, .site-colophon h2, .site-colophon h3, .site-colophon h4, .site-colophon h5, .site-colophon h6 {
+  color: @colophon-text-type-color;
+}
+.site-colophon a {
+  color: @colophon-link-color;
+}
+.site-colophon a:hover, .site-colophon a:focus {
+  color: @colophon-link-hover-color;
   text-decoration: none;
 }
 
