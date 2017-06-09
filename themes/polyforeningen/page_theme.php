@@ -24,7 +24,7 @@ class PageTheme extends Theme {
 	public function getThemeDefaultBlockTemplates()
     {
         return array(
-            'autonav' => 'site_nav_right'
+            'autonav' => 'site_nav'
         );
     }
 
