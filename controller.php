@@ -12,7 +12,7 @@ class Controller extends Package {
 
 	protected $pkgHandle = 'theme_polyforeningen';
 	protected $appVersionRequired = '5.7.4';
-	protected $pkgVersion = '0.1.93.13';
+	protected $pkgVersion = '0.1.93.16';
 	protected $pkgAllowsFullContentSwap = false;
 	
 	public function getPackageName() {
